@@ -91,5 +91,21 @@ I have completed my schooling in ST.mary's girls high school kothagudem</p>
 <footer>
     &copy; 2024 Meharun Blog.All rights reserved
 </footer>
+    <script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll('.container section');
+        sections.forEach(function (section) {
+            if (sectionId === 'Home') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+        var selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+</script>
 </body>
 </html>
